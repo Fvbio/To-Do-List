@@ -1,0 +1,12 @@
+{
+    "username" : "Name",
+    "password" : "Password",
+    "task" : [
+        {
+            "title" : "Task",
+            "description" : "Task description",
+            "status" : "Running",
+            "deadline" : "Deadline"
+        }
+    ]
+}

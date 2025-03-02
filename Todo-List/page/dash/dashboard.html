@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #task-form input,
+        #task-form textarea,
+        #task-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #task-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #task-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lien pour déconnexion -->
+    <a href="../../index.html">SE DECONNECTER</a>
+
+    <h1>Dashboard</h1>
+
+    <section>
+        <h2>Ajouter une nouvelle tâche</h2>
+
+        <form id="task-form">
+            <input type="text" id="task" placeholder="Nom de la tâche" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <select id="status_task" required>
+                <option value="En cours">En cours</option>
+                <option value="Terminé">Terminé</option>
+                <option value="En attente">En attente</option>
+            </select>
+            <input type="date" id="deadline" required>
+            <input type="submit" value="Ajouter la tâche">
+        </form>
+    </section>
+
+
+<section>
+    <h2>Tâches de l'utilisateur</h2>
+    <div id="task-list"></div> 
+</section>
+
+    
+    
+
+
+    
+    <script src="../../script/dash/dashboard.js" type="module"></script>
+</body>
+</html>
